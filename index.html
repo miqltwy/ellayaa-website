@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellayaa - Jasa Joki Digital Web & Aplikasi Terpercaya</title>
+  <meta name="description" content="Ellayaa Jasa Joki Digital menyediakan layanan profesional joki website, aplikasi mobile, coding tugas, UI/UX, dan maintenance dengan proses transparan, interaktif, dan aman." />
+  
+  <!-- Favicon -->
+  <link class="icon" href="assets/logo.png" type="image/png" />
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Google Fonts: Plus Jakarta Sans (Headings), Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Glow & Blobs -->
+  <div class="glow-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="brand" href="#beranda" aria-label="Ellayaa Jasa Joki Digital">
+        <img src="assets/logo.png" alt="Logo Ellayaa" />
+        <div class="brand-text">
+          <span class="brand-name">Ellayaa</span>
+          <span class="brand-tagline">Jasa Joki Digital</span>
+        </div>
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Menu Utama">
+        <a href="#beranda" class="active">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Global Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Ganti Tema" title="Ganti Tema Gelap/Terang">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        
+        <a class="nav-cta" href="https://wa.me/6282114631317?text=Halo%20Ellayaa%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20joki." target="_blank" rel="noreferrer">
+          Order Sekarang <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        
+        <button class="hamburger" id="hamburger" type="button" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <nav class="mobile-menu" aria-label="Menu Mobile">
+      <div class="mobile-theme-wrapper">
+        <span>Ganti Tema:</span>
+        <button id="mobileThemeToggle" class="theme-toggle" aria-label="Ganti Tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#cara-order">Cara Order</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+      <a class="mobile-cta" href="https://wa.me/6282114631317?text=Halo%20Ellayaa%2C%20saya%20tertarik%20untuk%20konsultasi%20jasa%20joki." target="_blank" rel="noreferrer">
+        Order Sekarang
+      </a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+      <div class="hero-container">
+        <!-- Hero Left Content -->
+        <div class="hero-copy reveal">
+          <h1>Jasa Joki Web & Aplikasi <br>Terpercaya, <span class="gradient-text">Cepat & Aman</span></h1>
+          <p class="description">
+            Ellayaa siap membantu menyelesaikan tugas web dan aplikasi Anda dengan hasil maksimal, tepat waktu, dan harga bersahabat.
+          </p>
+          
+          <div class="hero-features-grid">
+            <div class="hero-feature-item">
+              <div class="hf-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="hf-text">
+                <h3>100% Aman</h3>
+                <p>Data terjaga & privasi aman</p>
+              </div>
+            </div>
+            <div class="hero-feature-item">
+              <div class="hf-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="hf-text">
+                <h3>Pengerjaan Cepat</h3>
+                <p>Sesuai deadline yang disepakati</p>
+              </div>
+            </div>
+            <div class="hero-feature-item">
+              <div class="hf-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="hf-text">
+                <h3>Hasil Berkualitas</h3>
+                <p>Dikerjakan oleh ahli berpengalaman</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#layanan">
+              Lihat Layanan <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn secondary hero-wa-btn" href="https://wa.me/6282114631317?text=Halo%20Ellayaa%2C%20saya%20ingin%20konsultasi%20tugas%20coding%20atau%20project%20web%2Faplikasi." target="_blank" rel="noreferrer">
+              Hubungi Kami <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Visual (Mockup Dashboard Image from User's uploaded laptop rendering) -->
+        <div class="hero-visual reveal delay-1" id="heroVisual">
+          <div class="mockup-bg-glow"></div>
+          
+          <!-- Code Floating Tag -->
+          <div class="floating-tag tag-code parallax-item" data-speed="-1.5">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          
+          <!-- Floating Profile Avatar -->
+          <div class="floating-tag tag-user parallax-item" data-speed="1">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+
+          <!-- Floating Rocket Icon -->
+          <div class="floating-tag tag-rocket parallax-item" data-speed="-0.8">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <!-- Main Laptop Mockup Image (Replacing CSS card with high fidelity 3D mockup render) -->
+          <div class="laptop-mockup-wrapper parallax-item" data-speed="0.4" id="heroLaptop">
+            <img src="assets/hero_mockup.png" alt="Dashboard Mockup Ellayaa" class="hero-mockup-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="layanan">
+      <div class="services-container">
+        <div class="section-header reveal">
+          <span class="section-tag">LAYANAN KAMI</span>
+          <h2>Jasa Joki Web & Aplikasi</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Web & Mobile Dev -->
+          <article class="service-card reveal">
+            <div class="s-card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web & Mobile Dev</h3>
+            <p>Pengerjaan joki tugas & project pemrograman website serta aplikasi mobile Android/iOS.</p>
+            <a class="service-link" href="#" data-service="webmobile">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <!-- Card 2: UI/UX & Desain Sistem -->
+          <article class="service-card reveal delay-1">
+            <div class="s-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3>UI/UX & Desain Sistem</h3>
+            <p>Pembuatan mockup Figma responsif beserta diagram sistem (Flowchart, UML, ERD, DFD).</p>
+            <a class="service-link" href="#" data-service="systemdesign">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          
+          <!-- Card 3: Custom & Database -->
+          <article class="service-card reveal delay-2">
+            <div class="s-card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Custom & Database</h3>
+            <p>Pengerjaan database SQL/NoSQL, otomasi script, serta project kustom sesuai kebutuhan.</p>
+            <a class="service-link" href="#" data-service="customdb">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <!-- Workflow Section (Cara Order) -->
+    <section class="workflow" id="cara-order">
+      <div class="workflow-container">
+        <div class="section-header reveal">
+          <span class="section-tag">CARA ORDER</span>
+          <h2>Mudah, Cepat & Terstruktur</h2>
+        </div>
+
+        <div class="workflow-steps-wrapper reveal">
+          <div class="connecting-line"></div>
+          
+          <div class="workflow-grid">
+            <!-- Step 1 -->
+            <div class="step-card">
+              <div class="step-badge">01</div>
+              <div class="step-icon-box"><i class="fa-solid fa-comments"></i></div>
+              <h3>Konsultasi</h3>
+              <p>Sampaikan kebutuhan Anda melalui chat, kami siap membantu.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="step-card">
+              <div class="step-badge">02</div>
+              <div class="step-icon-box"><i class="fa-solid fa-clipboard-list"></i></div>
+              <h3>Kesepakatan</h3>
+              <p>Kami berikan penawaran harga dan estimasi waktu.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="step-card">
+              <div class="step-badge">03</div>
+              <div class="step-icon-box"><i class="fa-solid fa-code"></i></div>
+              <h3>Pengerjaan</h3>
+              <p>Kami kerjakan sesuai kesepakatan dengan progres yang jelas.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="step-card">
+              <div class="step-badge">04</div>
+              <div class="step-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+              <h3>Selesai & Revisi</h3>
+              <p>Hasil dikirim, revisi jika perlu hingga Anda puas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-column Features Grid under Steps -->
+        <div class="workflow-features-grid reveal">
+          <div class="wf-feature-card">
+            <div class="wff-icon"><i class="fa-solid fa-user-group"></i></div>
+            <h3>Tim Profesional</h3>
+            <p>Dikerjakan oleh ahli berpengalaman di bidangnya.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wff-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Privasi Terjamin</h3>
+            <p>Data dan informasi Anda aman bersama Ellayaa.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wff-icon"><i class="fa-solid fa-tags"></i></div>
+            <h3>Harga Bersahabat</h3>
+            <p>Harga kompetitif dengan kualitas terbaik untuk Anda.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wff-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>Fast Response</h3>
+            <p>Kami selalu siap membantu Anda kapan saja dengan cepat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (with 12 items on 2 pages) -->
+    <section class="portfolio" id="portofolio">
+      <div class="portfolio-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portofolio</span>
+          <h2>Beberapa Hasil Project Kami</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filters reveal" id="portfolioFilters">
+          <button class="filter-btn active" data-filter="all">Semua Kategori</button>
+          <button class="filter-btn" data-filter="website">Website</button>
+          <button class="filter-btn" data-filter="webapp">Aplikasi Web</button>
+          <button class="filter-btn" data-filter="uiux">Aplikasi Mobile</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Card 1: Web App -->
+          <article class="portfolio-card reveal" data-category="webapp">
+            <div class="p-card-image p-grad-1">
+              <div class="p-card-browser-mock">
+                <span class="p-c-dot"></span><span class="p-c-dot"></span><span class="p-c-dot"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-chart-pie p-inner-icon"></i>
+                <h4>Analytics</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>Dashboard Analytics</h3>
+              <span class="p-tag">Web Dashboard</span>
+            </div>
+          </article>
+          
+          <!-- Card 2: Website -->
+          <article class="portfolio-card reveal delay-1" data-category="website">
+            <div class="p-card-image p-grad-2">
+              <div class="p-card-browser-mock">
+                <span class="p-c-dot"></span><span class="p-c-dot"></span><span class="p-c-dot"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-bag-shopping p-inner-icon"></i>
+                <h4>E-Shop</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>E-Commerce Store</h3>
+              <span class="p-tag">Website</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Mobile App -->
+          <article class="portfolio-card reveal delay-2" data-category="uiux">
+            <div class="p-card-image p-grad-3">
+              <div class="p-card-phone-mock">
+                <span class="p-c-notch"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-credit-card p-inner-icon"></i>
+                <h4>M-Banking</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>Mobile Banking App</h3>
+              <span class="p-tag">Aplikasi Mobile</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Web App -->
+          <article class="portfolio-card reveal" data-category="webapp">
+            <div class="p-card-image p-grad-4">
+              <div class="p-card-browser-mock">
+                <span class="p-c-dot"></span><span class="p-c-dot"></span><span class="p-c-dot"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-graduation-cap p-inner-icon"></i>
+                <h4>E-Learning</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>Platform E-Learning</h3>
+              <span class="p-tag">Aplikasi Web</span>
+            </div>
+          </article>
+
+          <!-- Card 5: Website -->
+          <article class="portfolio-card reveal delay-1" data-category="website">
+            <div class="p-card-image p-grad-5">
+              <div class="p-card-browser-mock">
+                <span class="p-c-dot"></span><span class="p-c-dot"></span><span class="p-c-dot"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-plane-departure p-inner-icon"></i>
+                <h4>Travel</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>Travel Booking Landing</h3>
+              <span class="p-tag">Website</span>
+            </div>
+          </article>
+
+          <!-- Card 6: Mobile App -->
+          <article class="portfolio-card reveal delay-2" data-category="uiux">
+            <div class="p-card-image p-grad-6">
+              <div class="p-card-phone-mock">
+                <span class="p-c-notch"></span>
+              </div>
+              <div class="p-card-inner-content">
+                <i class="fa-solid fa-list-check p-inner-icon"></i>
+                <h4>Tasks</h4>
+              </div>
+            </div>
+            <div class="p-card-info">
+              <h3>Task Management App</h3>
+              <span class="p-tag">Aplikasi Mobile</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimoni">
+      <div class="testimonials-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Testimoni</span>
+          <h2>Apa Kata Klien Kami?</h2>
+        </div>
+
+        <div class="carousel-container reveal">
+          <div class="testimonials-slider" id="testimonialsSlider">
+            <!-- Card 1 -->
+            <div class="testimonial-card slide active">
+              <div class="t-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-feedback">
+                "Pembuatan landing page di Ellayaa sangat membantu menaikkan kredibilitas bisnis saya. Hasil kodenya rapi, tampilannya modern, dan timnya responsif jika ditanya-tanya."
+              </p>
+              <div class="t-author">
+                <div class="t-avatar"><i class="fa-solid fa-user"></i></div>
+                <div class="t-info">
+                  <h4>Dimas Pratama</h4>
+                  <span>CEO, TechStart</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="testimonial-card slide">
+              <div class="t-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-feedback">
+                "Aplikasinya berjalan lancar tanpa bug yang berarti, desain UI/UX mobile sangat fresh dan modern. Rekomendasi joki web dan aplikasi terpercaya bagi bisnis kami."
+              </p>
+              <div class="t-author">
+                <div class="t-avatar bg-accent"><i class="fa-solid fa-user-ninja"></i></div>
+                <div class="t-info">
+                  <h4>Sinta Aulia</h4>
+                  <span>Founder, ShopEase</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card slide">
+              <div class="t-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="t-feedback">
+                "Tugas coding algoritma saya diselesaikan sebelum tenggat waktu. Sangat menolong di saat darurat tugas menumpuk. Harganya juga bersahabat dengan kantong mahasiswa."
+              </p>
+              <div class="t-author">
+                <div class="t-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="t-info">
+                  <h4>Rizky Maulana</h4>
+                  <span>Mahasiswa IT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button id="prevBtn" class="carousel-btn" aria-label="Slide sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carousel-dots" id="carouselDots">
+              <span class="c-dot active" data-index="0"></span>
+              <span class="c-dot" data-index="1"></span>
+              <span class="c-dot" data-index="2"></span>
+            </div>
+            <button id="nextBtn" class="carousel-btn" aria-label="Slide berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="faq-container">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Pertanyaan yang Sering Diajukan</h2>
+        </div>
+
+        <div class="faq-accordion-grid">
+          <!-- Col 1 -->
+          <div class="faq-col">
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Berapa lama waktu pengerjaan biasanya?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Waktu pengerjaan disesuaikan dengan tingkat kesulitan proyek Anda. Biasanya untuk tugas pemrograman diselesaikan dalam 1-3 hari, sedangkan pengerjaan website/aplikasi memerlukan waktu 5-14 hari kerja.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Apakah bisa request teknologi tertentu?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Tentu bisa. Kami menguasai berbagai stack populer seperti HTML/CSS/JS, PHP, Python, React, Next.js, Vue, Flutter, Laravel, Node.js, database MySQL, PostgreSQL, dan Firebase.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Bagaimana sistem pembayaran di Ellayaa?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Kami menerapkan sistem pembayaran DP (Down Payment) sebesar 50% di awal sebagai komitmen kerjasama, dan sisa pelunasan 50% dibayarkan setelah proyek selesai divalidasi dan siap diserahkan.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Col 2 -->
+          <div class="faq-col">
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Apakah ada garansi setelah project selesai?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Ya. Kami berkomitmen memberikan garansi perbaikan gratis (bug fixing) selama 14 hingga 30 hari penuh pasca serah terima untuk memastikan produk berjalan dengan stabil tanpa gangguan.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Apakah data saya aman di Ellayaa?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Keamanan informasi Anda adalah prioritas utama kami. Seluruh dokumen tugas, kode sumber program, hingga kredensial server Anda dijamin kerahasiaannya dan tidak akan disebarkan.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question">
+                <span>Bagaimana jika hasil tidak sesuai?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Kami menyediakan opsi revisi sesuai kesepakatan awal untuk memodifikasi fungsi atau tampilan visual program agar benar-benar pas dengan alur konsep yang Anda butuhkan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New CTA Banner Section matching mockup -->
+    <section class="mid-cta-banner" id="kontak">
+      <div class="mid-cta-card reveal">
+        <div class="cta-bg-pattern"></div>
+        <div class="mid-cta-content">
+          <div class="mid-cta-text">
+            <h2>Siap menyelesaikan project Anda?</h2>
+            <p>Percayakan tugas web & aplikasi Anda kepada Ellayaa. Hasil terbaik, tepat waktu, harga bersahabat!</p>
+          </div>
+          <div class="mid-cta-action">
+            <a class="btn cta-white-btn" href="https://wa.me/6282114631317?text=Halo%20Ellayaa%2C%20saya%20ingin%20order%20project%20web%20atau%20aplikasi%20sekarang." target="_blank" rel="noreferrer">
+              Order Sekarang <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="mid-cta-badge">
+              <i class="fa-solid fa-lock"></i> 100% Aman & Terpercaya
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a class="brand" href="#beranda">
+            <img src="assets/logo.png" alt="Logo Ellayaa" />
+            <div class="brand-text">
+              <span class="brand-name text-white">Ellayaa</span>
+              <span class="brand-tagline">Jasa Joki Digital</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Ellayaa adalah jasa joki web & aplikasi terpercaya yang siap membantu menyelesaikan tugas dan project digital Anda.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3>Layanan</h3>
+          <ul>
+            <li><a href="#layanan" class="footer-service-link" data-service="webmobile">Web & Mobile Dev</a></li>
+            <li><a href="#layanan" class="footer-service-link" data-service="systemdesign">Desain UI/UX & Sistem</a></li>
+            <li><a href="#layanan" class="footer-service-link" data-service="customdb">Custom & Database</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3>Informasi</h3>
+          <ul>
+            <li><a href="#cara-order">Cara Order</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontak">Kontak Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h3>Hubungi Kami</h3>
+          <p><i class="fa-solid fa-phone"></i> 0821-1463-1317</p>
+          <p><i class="fa-solid fa-hashtag"></i> @ellayaa.digital</p>
+          <p><i class="fa-solid fa-envelope"></i> ellayaa.digital@gmail.com</p>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ellayaa. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/6282114631317?text=Halo%20Ellayaa%2C%20saya%20ingin%20tanya-tanya%20jasa%20pembuatan%20website%20dan%20aplikasi." class="floating-wa" target="_blank" rel="noreferrer" aria-label="Chat WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="floating-tooltip">Konsultasi Gratis!</span>
+  </a>
+
+  <!-- Service Detail Modal -->
+  <div class="service-modal" id="serviceModal">
+    <div class="service-modal-overlay" id="serviceModalOverlay"></div>
+    <div class="service-modal-content">
+      <button class="service-modal-close" id="closeServiceModal" aria-label="Tutup modal">&times;</button>
+      <div class="service-modal-header">
+        <div class="service-modal-icon" id="modalServiceIcon"><i class="fa-solid fa-code"></i></div>
+        <h3 id="modalServiceTitle">Nama Layanan</h3>
+      </div>
+      <div class="service-modal-body">
+        <p class="service-modal-desc" id="modalServiceDesc">Deskripsi layanan detail...</p>
+        
+        <div class="service-modal-features">
+          <h4>Apa Saja Yang Didapatkan?</h4>
+          <ul id="modalServiceFeatures">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </div>
+      <div class="service-modal-footer">
+        <a class="btn primary" id="modalServiceCTA" href="#" target="_blank" rel="noreferrer">
+          Pesan Layanan <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
